@@ -14,12 +14,12 @@
         <repository>
             <id>central</id>
             <name>Maven Central</name>
-            <url>http://central.maven.org/maven2/</url>
+            <url>https://repo.maven.apache.org/maven2/</url>
         </repository>
         <repository>
             <id>spring</id>
             <name>Spring Repository</name>
-            <url>http://repo.spring.io/plugins-release/</url>
+            <url>http://xqj.net/maven/</url>
         </repository>
     </repositories>
 
@@ -31,6 +31,16 @@
 
     <build>
         <plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.7.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>3.0.0</version>
+			</plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
